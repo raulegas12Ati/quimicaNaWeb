@@ -4,8 +4,9 @@
   "description": "",
   "main": "api.js",
   "scripts": {
-    "dev": "nodemon --env-file=.env api.js localhost 3333"
-  },
+  "start": "node api.js",
+  "dev": "nodemon --env-file=.env api.js"
+},
   "type": "module",
   "keywords": [],
   "author": "",

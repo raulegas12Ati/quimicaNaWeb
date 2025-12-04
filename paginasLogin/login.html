@@ -1,29 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Tabela Interativa</title>
+    <script src="./login.js"></script>
+    <script src="../home.js" defer></script>
     <link rel="stylesheet" href="login.css">
-    <script src="./login.js" defer></script>
-    <title>Login</title>
 </head>
 <body>
+
     <header>
-        <h1>Login</h1>
+        <nav class="AjusteLogin">
+
+      </nav>
     </header>
 
-    <form action="">
-        <div>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="Digite seu email">
-        </div>
-        <div>
-            <label for="password">Senha:</label>
-            <input type="password" id="password" placeholder="Digite uma senha">
+    <section class="login-container">
+
+    <div class="login-box">
+
+        <!-- Imagem à esquerda -->
+        <div class="login-image">
+            <img src="./image 55.png" alt="Imagem Química">
         </div>
 
-        <button>Entrar</button>
-        <a href="../cadastro/cadastro.html">Não tem uma conta? Cadastre-se!</a>
-    </form>
+        <!-- Área do formulário -->
+        <div class="login-form">
+
+            <h2>DESCUBRA O MUNDO DA QUÍMICA!</h2>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="username@gmail.com">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Password">
+
+            <a class="forgot" href="#">Esqueceu a senha?</a>
+
+            <button class="btn-login">ACESSAR</button>
+
+            <p class="create">
+    Não tem uma conta? <a href="../cadastro/cadastro.html">Crie aqui!</a>
+           </p>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<script src="./login.js"></script>
+
+<script>
+
+</script>
+
+<script src="home.js"></script>
+<script src="./aviso.js"></script>
+
 </body>
 </html>

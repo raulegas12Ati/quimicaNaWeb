@@ -89,21 +89,40 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
-.btn-iniciar {
+.btn-iniciando {
     display: inline-block;
-    padding: 0.938rem 12.5rem;
-    font-size: 1.4rem;
+    padding: 1.4rem;
+    font-size: 1.7rem;
     border: none;
-    border-radius: 3.125rem;
+    border-radius: 3rem;
     background: linear-gradient(90deg, #ff00cc, #3333ff);
     color: white;
     cursor: pointer;
     font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
+    gap: 7rem;
+}
+
+.btn-iniciar {
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    border: none;
+    border-radius: 3rem;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    gap: 7rem;
 }
 
 .btn-iniciar:hover {
+    transform: scale(1.15);
+}
+.btn-iniciando:hover {
     transform: scale(1.15);
 }
 
