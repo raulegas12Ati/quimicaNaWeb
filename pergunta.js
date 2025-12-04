@@ -122,7 +122,7 @@ async function finalizarQuiz() {
     contadorAcertos
   }
 
-  const response = await fetch("http://localhost:3333/coletaScore", {
+  const response = await fetch("https://quimicanawebback.onrender.com/coletaScore", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
