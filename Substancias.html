@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substâncias Inorgânicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="substancias.css">
+    <script src="botão_subir.js"></script>
+    <script src="videoaula2.js"></script>
+ 
+    
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+         <a href="./index.html">
+        <img src="./logo.png" alt="Logo">
+        </a>
+        </div>
+            <ul>
+                <li><a href="./Tabela_interativa.html">TABELA</a></li>
+                <li><a href="./Temas.html">TEMAS</a></li>
+                <li><a href="./TQuiz.html">QUIZ</a></li>
+                <li><a href="./SN.html">CRIADORES</a></li>
+            </ul>
+            <li><img src="./Profile.png" alt=""><a href=""></a></li>
+        </nav>
+    </header>
+
+    <section class="topo">
+    <h1>SUBSTÂNCIAS INORGÂNICAS</h1>
+    <div class="botoes">
+        <button data-target="acidos">Ácidos</button>
+        <button data-target="sais">Sais</button>
+        <button data-target="bases">Bases</button>
+        <button data-target="video-section">Vídeo-aulas</button>
+    </div>
+</section>
+
+    <section class="bloco" id="acidos">
+    <div class="texto">
+        <h2>Ácidos</h2>
+        <p>Os ácidos são substâncias químicas fundamentais na ciência, conhecidos por liberarem íons H⁺ em solução aquosa e apresentarem características como sabor azedo e pH abaixo de 7. Encontramos ácidos em produtos comuns, como o vinagre (ácido acético) e os cítricos (ácido cítrico), além de ácidos mais fortes, como o ácido sulfúrico, amplamente utilizado na fabricação de fertilizantes e baterias.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Substancias/image 12.png" alt="Laboratório">
+    </div>
+</section>
+
+    <div class="ph">
+        <div class="escala">
+            <img src="./numeração.png" alt="Escala de pH">
+        </div>
+        <div class="seta">
+            <img src="./Setas/esquerda.png" alt="Seta">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+    <section class="bloco" id="sais">
+    <div class="texto">
+        <h2>Sais</h2>
+        <p>Sais são toda e qualquer substância que não seja um ácido ou uma base, ou seja, quando dissolvido não libera nem H⁺ nem OH⁻. Os sais são substâncias de pH neutro (7), venenosos em sua maioria, higroscópicos, absorvem água e, quando em substância aquosa, conduzem bem eletricidade.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Substancias/image 14.png" alt="Sal">
+    </div>
+    </section>
+
+    <div class="ph">
+        <div class="escala">
+            <img src="./numeração.png" alt="Escala de pH">
+        </div>
+        <div class="seta">
+            <img src="./Icone/setas.png" alt="Seta Dupla">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+   <section class="bloco" id="bases">
+    <div class="texto">
+        <h2>Bases</h2>
+        <p>Bases são substâncias que, quando dissolvidas em água, liberam OH⁻ (composto conhecido como hidróxido) num processo chamado dissociação. As bases apresentam pH maior que 7, ou seja, alcalino. Além disso, têm sabor adstringente, um nó na língua. Para dar nome a uma base é bem simples, basta dizer hidróxido + nome do outro elemento: KOH = hidróxido de potássio.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Substancias/soda cáustica.png" alt="Soda Cáustica">
+    </div>
+    </section>
+
+    <div class="ph">
+        <div class="escala">
+            <img src="./numeração.png" alt="Escala de pH">
+        </div>
+        <div class="seta">
+            <img src="./Setas/direita.png" alt="Seta">
+        </div>
+    </div>
+
+     <br>
+    <br>
+    <br>
+
+    <hr>
+
+
+  <section class="video-section" id="video-section">
+  <h2>Vídeo-Aulas</h2>
+  <p>
+    👉 Para começar, clique em um dos botões de tópicos disponíveis na tela.
+    Cada botão leva você diretamente para as vídeo-aulas correspondentes,
+    facilitando o estudo. Use as setas para avançar ou voltar.
+  </p>
+
+  <div class="botoes-2">
+    <button data-target="acidos">Ácidos</button>
+    <button data-target="sais">Sais</button>
+    <button data-target="bases">Bases</button>
+  </div>
+
+  <div class="video-container">
+    <button class="arrow" id="prevBtn">&#10094;</button>
+
+    <iframe id="videoPlayer" 
+        width="800" 
+        height="450" 
+        src="" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <button class="arrow" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+ 
+    
+    <!-- Botão -->
+    <div class="subir-container">
+        <button class="subir-btn">Subir</button>
+
+    </div>
+</section>
+
+
+</body>
+</html>

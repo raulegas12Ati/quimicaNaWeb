@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Chau Philomene One;
+    color: white;
+    background-size: cover;
+    background-color: #1B123A;
+}
+
+header {
+    background-color: #0BA8BC;
+    padding: 0.125rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4.375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5625rem;
+    color: white;
+    transition: background 0.3s ease;
+    font-family: Chau Philomene One;
+    font-weight: 100;
+    font-size: 1.3125rem;
+}
+
+nav ul li a:hover {
+    background-color: #b52698;
+}
+
+nav button {
+  background-color: #0FE0FA;
+  color: #080637;
+  border: none;
+  padding: 0.625rem 1.25rem;
+  margin: 0 0.3125rem;
+  border-radius: 1.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+nav button.active {
+  background-color: #FF5E5E;
+  color: white;
+}
+
+main {
+  max-width: 56.25rem;
+  margin: 2.5rem auto;
+  text-align: center;
+  padding: 2.5rem 1.875rem;
+  font-size: 1.3rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+  margin-top: 3.125rem;
+  justify-content: center;
+}
+
+.option {
+  background-color: #0FE0FA;
+  color: #080637;
+  padding: 1.25rem 1.5625rem;  
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.5rem;  
+  display: flex;
+  align-items: center;
+}
+
+.option span {
+  display: inline-block;
+  background-color: white;
+  color: #080637;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  text-align: center;
+  line-height: 2.1875rem;
+  border-radius: 50%;
+  font-weight: 700;
+  margin-right: 0.9375rem;
+  font-size: 1rem;
+}
+
+.option.correct {
+  background-color: #00FF26;
+  color: black;
+}
+
+.option.incorrect {
+  background-color: #FF5E5E;
+  color: white;
+}
+
+.next-btn {
+  position: absolute;
+  bottom: 1.25rem; 
+  right: 1.25rem;   
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;  
+  padding: 0.3125rem;   
+}
+
+.next-btn img {
+  width: 4.375rem;   
+  height: auto;
+  display: block;
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+.popup {
+  background: #000;
+  padding: 1.875rem 1.5625rem;
+  border-radius: 1.25rem;
+  text-align: center;
+  max-width: 25rem;
+  width: 90%;
+  color: #fff;
+  box-shadow: 0px 0.375rem 1.25rem rgba(0,0,0,0.4);
+}
+
+.popup h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.625rem;
+}
+
+.popup p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5625rem;
+  color: #f1f1f1;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.popup-buttons button {
+  flex: 1;
+  max-width: 7.5rem;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #D633BA;
+  color: #fff;
+  transition: background 0.3s ease;
+  font-family: Chau Philomene One;
+  font-weight: 100;
+}
+
+.popup-buttons button:hover {
+  background: #b52698;
+}
+
+.popup-buttons button,
+.popup-buttons a {
+  flex: 1;
+  max-width: 7.5rem;
+  padding: 0.75rem 0;
+  border: none;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #D633BA;
+  color: #fff;
+  transition: background 0.3s ease;
+  font-family: Chau Philomene One;
+  font-weight: 100;
+  text-align: center;
+  text-decoration: none; 
+  display: inline-block; 
+}
+
+.popup-buttons button:hover,
+.popup-buttons a:hover {
+  background: #b52698;
+}
+
+#progress-container {
+  width: 100%;
+  height: 1.7rem;
+  background-color: #0BA8BC;
+  border-radius: 0.625rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #0FE0FA;
+  transition: width 0.5s ease;
+}
+
+.tela-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0.938rem;
+  text-align: center;
+  color: white;
+  margin-top: -4.375rem;
+}
+
+.tela-final h2 {
+  font-size: 2.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.tela-final img.medalha {
+  width: 9.375rem;
+  margin-bottom: 1.563rem;
+}
+
+.tela-final p {
+  font-size: 1.5rem;
+  margin-bottom: 1.563rem;
+}
+
+.tela-final button {
+  padding: 0.75rem 1.875rem;
+  background: #D633BA;
+  color: white;
+  border: none;
+  border-radius: 3.125rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: Chau Philomene One;
+}
+
+.tela-final button:hover {
+  background: #b52698;
+  transform: scale(1.05);
+}
+
+nav ul .perfil {
+  margin-left: auto; /* empurra o ícone para a direita */
+}
+
+nav ul .perfil img {
+  width: 32px;     /* ajuste o tamanho do ícone */
+  height: 32px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Chau Philomene One;
+    color: white;
+    background: url('./Fundo_Quimica.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #0BA8BC;
+    padding: 0.125rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4.375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5625rem;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    font-family: Chau Philomene One;
+    font-weight: 100;
+    font-size: 1.3125rem;
+}
+
+nav ul li a:hover {
+    background-color: #b52698;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 0 1.25rem;
+}
+
+.intro h1 {
+    font-size: 2.1875rem;
+    font-family: Chau Philomene One;
+    font-weight: 100;
+}
+
+.intro p {
+    margin-top: 0.625rem;
+    line-height: 1.5;
+}
+
+.equipe {
+    background-color: rgba(11, 168, 188, 0.85);
+    margin: 2.5rem auto;
+    padding: 3.4375rem;
+    width: 55%;
+    border-radius: 0.625rem;
+    text-align: center;
+}
+
+.membros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 0.9375rem;
+}
+
+.membro {
+    text-align: center;
+}
+
+.membro img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.membro p {
+    margin-top: 0.4375rem;
+}
+
+.descricao {
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.redes-sociais {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    border-radius: 1rem;
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.redes-sociais h2 {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 100;
+}
+
+.icones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.icone a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.icone img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icone:hover img {
+    transform: scale(1.2) rotate(10deg);
+    box-shadow: 0 0 15px #f58529, 0 0 25px #dd2a7b, 0 0 35px #8134af;
+}
+
+.icone p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #fff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.icone:hover p {
+    color: #fff;
+    text-shadow: 0 0 10px #f58529, 0 0 15px #dd2a7b, 0 0 20px #8134af;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 2rem;
+  font-family: Chau Philomene One;
+}
+
+nav ul .perfil {
+  margin-left: auto; /* empurra o ícone para a direita */
+}
+
+nav ul .perfil img {
+  width: 32px;     /* ajuste o tamanho do ícone */
+  height: 32px;
+  cursor: pointer;
+}
+
+
+
+

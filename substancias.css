@@ -1,0 +1,293 @@
+body {
+    background-color: #1B123A;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #0BA8BC;
+    padding: 0.125rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4.375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5625rem;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    font-family: Chau Philomene One;
+    font-weight: 100;
+    font-size: 1.3125rem;
+}
+
+nav ul li a:hover {
+    background-color: #b52698;
+}
+
+.topo {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.topo h1 {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    font-weight: 100;
+}
+
+.botoes button {
+    background-color: #D633BA;
+    color: white;
+    padding: 0.75rem 1.5625rem;
+    margin: 0.625rem;
+    border: none;
+    border-radius: 1.25rem;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.bloco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    gap: 3rem;             /* alterado de 1.875rem para 3rem */
+    margin-inline: 18rem;
+}
+
+.bloco .texto {
+    flex: 1;
+}
+
+.bloco .texto h2 {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.bloco .texto p {
+    line-height: 1.6;
+}
+
+.bloco .imagem img {
+    max-width: 46.875rem;
+    border-radius: 0.625rem;
+}
+
+.ph {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 1.25rem 0;
+}
+
+.ph .escala img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ph .seta img {
+    width: 18.125rem;
+    margin-top: 1.25rem;
+}
+
+.topo button:hover {
+    background-color: #b52698;
+    transition: background 0.3s ease;
+}
+
+.thumb {
+    background-color: #9ff8ff;
+    width: 40%;
+}
+
+.info {
+    padding: 0.625rem;
+    font-size: 0.8rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subir-container {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.subir-btn {
+    background-color: #D633BA;
+    color: white;
+    border: none;
+    padding: 0.625rem 1.5625rem;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Chau Philomene One', sans-serif;
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+}
+
+.subir-btn:hover {
+    background-color: #b52698;
+    transition: background 0.3s ease;
+}
+
+.video-section {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    background-color: #1a0d3a;
+    padding: 2.5rem 1.25rem;
+}
+
+.video-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.9375rem;
+}
+
+.video-section p {
+    max-width: 37.5rem;
+    margin: 0 auto 1.5625rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topics {
+    margin-bottom: 1.5625rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.9375rem;
+}
+
+.topics button {
+    background: #ce31b1;
+    border: none;
+    border-radius: 1.5625rem;
+    padding: 0.625rem 1.5625rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.topics button:hover {
+    background: #a02585;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 1.875rem;
+}
+
+.video-container iframe {
+    width: 50rem;
+    height: 28.125rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0,0,0,0.5);
+}
+
+.arrow {
+    font-size: 3.125rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.arrow:hover {
+    transform: scale(1.3);
+}
+
+.video-section h2 {
+    font-family: Chau Philomene One;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+}
+
+.botoes-2 button {
+    background-color: #D633BA;
+    color: white;
+    padding: 0.75rem 2.1875rem;
+    margin: 0.625rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 1.7rem;
+    cursor: pointer;
+    gap: 1.25rem;
+    justify-content: center;
+    margin-bottom: 3.125rem;
+    padding: 0.75rem 2.1875rem;
+}
+
+.botoes-2 button:hover {
+    background-color: #b52698;
+    transition: background 0.3s ease;
+}
+
+.bolinha div a {
+    text-decoration: none; 
+}
+
+.botao-voltar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5625rem;
+    color: white;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-weight: 100;
+    font-size: 1.3125rem;
+    transition: background 0.3s ease;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.botao-voltar:hover {
+    background-color: #b52698;
+}
+
+nav ul .perfil {
+  margin-left: auto; /* empurra o ícone para a direita */
+}
+
+nav ul .perfil img {
+  width: 32px;     /* ajuste o tamanho do ícone */
+  height: 32px;
+  cursor: pointer;
+}
+
+
+
+
+

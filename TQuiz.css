@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Chau Philomene One;
+    color: white;
+    background-size: cover;
+    background-color: #1B123A;
+}
+
+header {
+    background-color: #0BA8BC;
+    padding: 2px 0;
+}
+
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; 
+  }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 10px 30px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    font-family: Chau Philomene One;
+    font-weight: 100;
+    font-size: 21px;
+}
+
+nav ul li a:hover {
+    background-color: #b52698;
+}
+
+
+.titulo-topicos {
+    font-family: 'Chau Philomene One', sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 3.125rem;
+}
+
+.titulo-topicos img {
+    width: 3.125rem;
+}
+
+.circulos {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2.5rem;
+}
+
+.circulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circulo .bolinha {
+    background-color: #0BA8BC;
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chau Philomene One', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 4.375rem;
+    line-height: 1.2;
+}
+
+.circulo .bolinha span {
+    font-size: 2.813rem;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+.circulo img {
+    margin-top: 1.25rem;
+    height: 3.75rem;
+}
+
+.circulo .bolinha:hover {
+    background-color: #098696;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.circulos a {
+    text-decoration: none;
+}
+
+nav ul .perfil {
+  margin-left: auto; /* empurra o ícone para a direita */
+}
+
+nav ul .perfil img {
+  width: 32px;     /* ajuste o tamanho do ícone */
+  height: 32px;
+  cursor: pointer;
+}
+
+
+
+
+

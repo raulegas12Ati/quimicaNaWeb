@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Chau Philomene One;
+    color: white;
+    background-size: cover;
+    background-color: #1B123A;
+}
+
+header {
+    background-color: #0BA8BC;
+    padding: 0.125rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4.375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5625rem;
+    color: white;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    font-family: Chau Philomene One;
+    font-weight: 100;
+    font-size: 1.3125rem;
+    align-items: ;
+}
+
+nav ul li a:hover {
+    background-color: #b52698;
+}
+
+
+
+.login-container {
+    width: 100%;
+    height: calc(100vh - 90px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1B123A url('./image\ 54.png') no-repeat center/cover;
+    padding-top: 1rem;
+}
+
+
+
+.login-box {
+    width: 75%;
+    max-width: 950px;
+    height: 480px;
+    background: linear-gradient(135deg, #0BA8BC, #FF00CC);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden
+}
+
+/* IMAGEM À ESQUERDA */
+
+.login-image {
+    width: 60%;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.login-form {
+    width: 50%;
+    padding: 40px 60px;
+    color: white;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    font-family: "Chau Philomene One";
+}
+
+
+
+.login-form label {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+.login-form input {
+    margin: 8px 0 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+.forgot {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+
+.btn-login {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    background: #003F61;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: "Chau Philomene One";
+}
+
+.btn-login:hover {
+    background: #002e47;
+}
+
+
+.create {
+    margin-top: 17px;
+    font-size: 13px;
+    text-align: center;
+}

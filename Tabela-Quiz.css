@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chau Philomene One', sans-serif;
+    color: white;
+    background-size: cover;
+    background-color: #1B123A;
+    display: flex;
+    justify-content: center;   
+    align-items: center;      
+    flex-direction: column;   
+    height: 100vh;
+}
+
+
+header {
+    background-color: #0BA8BC;
+    width: 100%;
+    padding: 0.125rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4.375rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    background-color: #D633BA;
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.5625rem;
+    color: white;
+    font-weight: 100;
+    font-size: 1.3125rem;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b52698;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;       
+    justify-content: center;   
+    gap: 3.125rem;
+    margin-top: 6.25rem;
+    width: 85%;
+    max-width: 75rem;
+    text-align: left;
+}
+
+.texto {
+    max-width: 40%;
+}
+
+.texto h1 {
+    font-size: 3.9rem;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00e5ff, #7cf9ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 1.875rem #00e5ff, 0 0 3.75rem #0077ff;
+    margin-bottom: 1.25rem;
+}
+
+.texto p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.btn-iniciar {
+    display: inline-block;
+    padding: 0.938rem 12.5rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 3.125rem;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-iniciar:hover {
+    transform: scale(1.15);
+}
+
+.molecula {
+    width: 37.5rem;
+    animation: flutuar 6s ease-in-out infinite;
+    margin-left: 17rem 
+}
+
+.atom-central {
+    fill: #ff00cc;
+    filter: drop-shadow(0 0 0.938rem #ff00cc);
+}
+
+.atom {
+    fill: #00e5ff;
+    filter: drop-shadow(0 0 0.625rem #00e5ff);
+}
+
+.ligacao {
+    stroke: #7cf9ff;
+    stroke-width: 0.188rem; 
+    opacity: 0.7;
+}
+
+nav ul .perfil {
+  margin-left: auto; /* empurra o ícone para a direita */
+}
+
+nav ul .perfil img {
+  width: 32px;     /* ajuste o tamanho do ícone */
+  height: 32px;
+  cursor: pointer;
+}
+
+
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-1.25rem); } 
+}
+
+

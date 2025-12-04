@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligações Químicas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="substancias.css">
+    <script src="botão_subir.js"></script>
+    <script src="videoaula3.js"></script>
+   
+ 
+    
+</head>
+<body>
+
+
+   <header>
+        <nav>
+            <div class="logo">
+         <a href="./index.html">
+        <img src="./logo.png" alt="Logo">
+        </a>
+        </div>
+            <ul>
+                <li><a href="./Tabela_interativa.html">TABELA</a></li>
+                <li><a href="./Temas.html">TEMAS</a></li>
+                <li><a href="./TQuiz.html">QUIZ</a></li>
+                <li><a href="./SN.html">CRIADORES</a></li>
+            </ul>
+            <li><img src="./Profile.png" alt=""><a href=""></a></li>
+        </nav>
+    </header>
+
+
+    <section class="topo">
+    <h1>LIGAÇÕES QUÍMICAS</h1>
+    <div class="botoes">
+        <button data-target="acidos">Lig. Iônica</button>
+        <button data-target="sais">Lig. Metálica</button>
+        <button data-target="bases">Lig. Covalente</button>
+        <button data-target="video-section">Vídeo-aulas</button>
+    </div>
+</section>
+
+    <section class="bloco" id="acidos">
+    <div class="texto">
+        <h2>Ligação iônica</h2>
+        <p>Compostos iônicos conduzem eletricidade no estado líquido ou dissolvidos, mas não quando sólidos. <br> Eles normalmente têm um alto ponto de fusão e alto ponto de ebulição. Uma analogia seria comparar os elementos químicos ao alfabeto que, uma vez organizado seguindo uma dada regra ou ordem, leva as letras a formarem palavras imbuídas de significado distinto e bem mais amplo daquele disponível quando separadas.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Icone/NaCl.png" alt="Laboratório">
+    </div>
+</section>
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+    <section class="bloco" id="sais">
+    <div class="texto">
+        <h2>Ligação Metálica</h2>
+        <p>A ligação metálica ocorre entre átomos de metais e é caracterizada pelo compartilhamento de uma "nuvem" de elétrons livres, que se movem facilmente entre os átomos. Esse tipo de ligação confere aos metais propriedades únicas, como alta condutividade elétrica e térmica, maleabilidade e ductilidade. Na estrutura metálica, os elétrons livres criam uma ligação forte entre os átomos, formando uma rede compacta que torna os metais resistentes e brilhantes. Essa característica permite que os metais possam ser moldados sem quebrar, uma propriedade essencial em indústrias e construções.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Icone/L_Metálica.png" alt="Sal">
+    </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+   <section class="bloco" id="bases">
+    <div class="texto">
+        <h2>Ligação Covalente</h2>
+        <p>A ligação covalente acontece quando dois átomos compartilham elétrons para atingir uma configuração eletrônica estável, geralmente completando a camada de valência. Esse tipo de ligação é comum entre átomos não metálicos e resulta na formação de moléculas, como H₂O (água) e CO₂ (dióxido de carbono). As ligações covalentes podem ser simples (compartilhamento de um par de elétrons), duplas ou triplas, dependendo da quantidade de pares compartilhados. As moléculas covalentes tendem a ter pontos de fusão e ebulição mais baixos do que compostos iônicos e, muitas vezes, são isolantes.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Icone/Imagem1.png" alt="Soda Cáustica">
+    </div>
+    </section>
+
+     <br>
+    <br>
+    <br>
+
+    <hr>
+
+
+   <section class="video-section" id="video-section">
+   <h2>Vídeo-Aulas</h2>
+   <p>
+    👉 Para começar, clique em um dos botões de tópicos disponíveis na tela.
+    Cada botão leva você diretamente para as vídeo-aulas correspondentes,
+    facilitando o estudo. Use as setas para avançar ou voltar.
+    </p>
+
+    <div class="botoes-2">
+        <button data-target="acidos">Lig. Iônica</button>
+        <button data-target="sais">Lig. Metálica</button>
+        <button data-target="bases">Lig. Covalente</button>
+    </div>
+
+    <div class="video-container">
+        <button class="arrow" id="prevBtn">&#10094;</button>
+    
+        <iframe id="videoPlayer" 
+            width="800" 
+            height="450" 
+            src="https://www.youtube.com/embed/WRTwCeW_dv4?si=pthghcFO_QhwHyc_" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    
+        <button class="arrow" id="nextBtn">&#10095;</button>
+      </div>
+  </div>
+</section>
+ 
+    
+    <!-- Botão -->
+    <div class="subir-container">
+        <button class="subir-btn">Subir</button>
+
+    </div>
+</section>
+
+
+</body>
+</html>

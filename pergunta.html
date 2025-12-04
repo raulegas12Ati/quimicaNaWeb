@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Tabela Periódica</title>
+  <link rel="stylesheet" href="pergunta.css">
+  <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="quiz-container">
+ 
+   <header>
+        <nav>
+            <div class="logo">
+         <a href="./index.html">
+        <img src="./logo.png" alt="Logo">
+        </a>
+        </div>
+            <ul>
+                <li><a href="./Tabela_interativa.html">TABELA</a></li>
+                <li><a href="./Temas.html">TEMAS</a></li>
+                <li><a href="./TQuiz.html">QUIZ</a></li>
+                <li><a href="./SN.html">CRIADORES</a></li>
+            </ul>
+            <li><img src="./Profile.png" alt=""><a href=""></a></li>
+        </nav>
+    </header>
+
+
+<div id="popup-sair" class="popup-overlay">
+  <div class="popup">
+    <h2>Você quer mesmo sair do quiz?</h2>
+    <p>Vai perder seu progresso!</p>
+    <div class="popup-buttons">
+      <a href="./Tabela_Quiz.html" id="confirmar-sair">Sim</a>
+      <button id="cancelar-sair">Não</button>
+    </div>
+  </div>
+</div>
+
+    <main>
+      <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <h2 id="question"></h2>
+  <div id="options" class="options-grid"></div>
+  
+  <button id="next-btn" class="next-btn">
+    <img src="./Icone/Seta para direita.png" alt="Próximo" />
+  </button>
+
+    </main>
+  </div>
+
+  <script src="pergunta.js"></script>
+
+  <div id="resultado" class="resultado-final" style="display:none;"></div>
+
+
+  
+</body>
+</html>

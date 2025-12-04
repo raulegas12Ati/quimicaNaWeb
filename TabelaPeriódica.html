@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela Periódica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="stylesheet" href="substancias.css">
+    <script src="botão_subir.js"></script>
+    <script src="videoaula.js"></script>
+ 
+    
+</head>
+<body>
+
+   <header>
+        <nav>
+            <div class="logo">
+         <a href="./index.html">
+        <img src="./logo.png" alt="Logo">
+        </a>
+        </div>
+            <ul>
+                <li><a href="./Tabela_interativa.html">TABELA</a></li>
+                <li><a href="./Temas.html">TEMAS</a></li>
+                <li><a href="./TQuiz.html">QUIZ</a></li>
+                <li><a href="./SN.html">CRIADORES</a></li>
+            </ul>
+            <li><img src="./Profile.png" alt=""><a href=""></a></li>
+        </nav>
+    </header>
+
+    <section class="topo">
+    <h1>TABELA PERIÓDICA</h1>
+    <div class="botoes">
+        <button data-target="acidos">História</button>
+        <button data-target="sais">Propriedades</button>
+        <button data-target="bases">Curiosidades</button>
+        <button data-target="video-section">Vídeo-aulas</button>
+    </div>
+</section>
+
+    <section class="bloco" id="acidos">
+    <div class="texto">
+        <h2>História</h2>
+        <p>A classificação dos elementos em formato de tabela foi proposta por Dmitri Mendeleev em 1869, o qual foi responsável por identificar e agrupar elementos químicos com propriedades similares em uma mesma coluna. Inicialmente, Mendeleev utilizou a massa atômica como critério de organização dos elementos. Porém, em 1913, Henry Moseley descobriu o número atômico, e a tabela periódica passou a serordenada de acordo com o número crescente de prótons no átomo, assumindo a configuração atual.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Icone/criador.png" alt="Laboratório">
+    </div>
+</section>
+
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+    <section class="bloco" id="sais">
+    <div class="texto">
+        <h2>Propriedades</h2>
+        <p>A tabela periódica está dividida em 7 períodos(linhas horizontais) que indicam a quantidade de camadas na eletrosfera(se um elemento esta no 2° período ele tem 2 camadas, se está no 5° tem 5) e famílias(verticais) que agrupam elementos com características semelhantes. Além disso a tabela mostra características como número atômico(número de prótons) representado pela letra z, e a massa atômica(soma de prótons com nêutrons), algumas tabelas podem conter mais dados como massa molar ou número de elétrons por camadas.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Icone/tabela periodica2.png" alt="Sal">
+    </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <hr>
+
+   <section class="bloco" id="bases">
+    <div class="texto">
+        <h2>Curiosidades</h2>
+        <p>A União Internacional de Química Pura e Aplicada (IUPAC) é uma ONG que define padrões para a Tabela Periódica.
+O primeiro elemento isolado em laboratório foi o fósforo, descoberto há mais de 350 anos pelo alquimista Henning Brand.
+Na década de 1940, Glenn Seaborg descobriu o Plutônio e outros elementos transurânicos, recebendo o Prêmio Nobel em 1951. O elemento 106 recebeu o nome Seabórgio em sua homenagem.
+Em 2016, quatro novos elementos foram oficializados: Tennessine, Nihonium, Moscovium e Oganesson.
+Esses elementos recém-sintetizados são chamados de superpesados, pois têm núcleos com muitos prótons, muito além dos encontrados na natureza.</p>
+    </div>
+    <div class="imagem">
+        <img src="./Icone/imagem elementos.png" alt="Soda Cáustica">
+    </div>
+    </section>
+
+     <br>
+    <br>
+    <br>
+
+    <hr>
+
+
+  <section class="video-section" id="video-section">
+  <h2>Vídeo-Aulas</h2>
+  <p>
+    👉 Para começar, clique em um dos botões de tópicos disponíveis na tela.
+    Cada botão leva você diretamente para as vídeo-aulas correspondentes,
+    facilitando o estudo. Use as setas para avançar ou voltar.
+  </p>
+
+  <div class="botoes-2">
+    <button data-target="acidos">História</button>
+    <button data-target="sais">Propriedades</button>
+    <button data-target="bases">Curiosidades</button>
+  </div>
+
+  <div class="video-container">
+    <button class="arrow" id="prevBtn">&#10094;</button>
+
+    <iframe id="videoPlayer" 
+        width="800" 
+        height="450" 
+        src="https://www.youtube.com/embed/UiL3kzW8gYg?si=D7r0pubbPEqHwhzB" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+
+    <button class="arrow" id="nextBtn">&#10095;</button>
+  </div>
+</section>
+
+ 
+    
+    <!-- Botão -->
+    <div class="subir-container">
+        <button class="subir-btn">Subir</button>
+
+    </div>
+</section>
+
+
+</body>
+</html>
