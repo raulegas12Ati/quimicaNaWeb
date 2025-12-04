@@ -1,3 +1,13 @@
+const user = JSON.parse(sessionStorage.getItem("user"));
+
+if (!user) {
+  alert("Você precisa fazer login!");
+  window.location.href = "../login/login.html";
+}
+
+const id = user.id;
+const userName = user.name;
+
 const perguntas = [
   {
     texto: "Qual é o elemento mais abundante no universo?",
@@ -106,9 +116,6 @@ async function finalizarQuiz() {
   let mensagem = document.createElement("p");
   let botaoRetry = document.createElement("button");
 
-  const userName = "raul"
-  const id = 105
-
   const user = {
     id,
     userName,
@@ -122,9 +129,9 @@ async function finalizarQuiz() {
     },
     body: JSON.stringify({ user })
   }).then(response => response.json())
-// export function getScore() {
-//   return contadorAcertos;
-// }
+  // export function getScore() {
+  //   return contadorAcertos;
+  // }
 
   if (contadorAcertos === perguntas.length) {
     titulo.textContent = "Medalha de Au!";

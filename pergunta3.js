@@ -1,3 +1,13 @@
+const user = JSON.parse(sessionStorage.getItem("user"));
+
+if (!user) {
+  alert("Você precisa fazer login!");
+  window.location.href = "../login/login.html";
+}
+
+const id = user.id;
+const userName = user.name;
+
 const perguntas = [
   {
     texto: "Descreva o modelo de ligação de Lewis e como ele pode ser utilizado para prever a geometria molecular",
@@ -105,9 +115,6 @@ async function finalizarQuiz() {
   let medalhaImg = document.createElement("img");
   let mensagem = document.createElement("p");
   let botaoRetry = document.createElement("button");
-
-  const userName = "raul"
-  const id = 105
 
   const user = {
     id,

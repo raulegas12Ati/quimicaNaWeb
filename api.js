@@ -68,12 +68,11 @@ app.post("/cadastro", async (request, response) => {
 app.post("/coletaScore", (request, response) => {
     const { id, userName, contadorAcertos } = request.body.user
     console.log(contadorAcertos)
+    console.log(id, userName)
 
     const selectSql = `
         SELECT score FROM quimicaNaWeb WHERE id_usuario = ?
     `
-
-
 
     database.query(selectSql, [id], (error, results) => {
         if (error) {
@@ -102,7 +101,7 @@ app.post("/coletaScore", (request, response) => {
                 return
             }
 
-            response.json({ message: "Sucesso" })
+            response.json({ message: "Pontuação salva" })
         })
     })
 })
@@ -130,8 +129,36 @@ app.get("/podio", (request, response) => {
     })
 })
 
+app.post("/login", (request, response) => {
+    const { email, password } = request.body.users
 
+    const selectCommand = "SELECT * FROM quimicaNaWeb WHERE email = ?"
 
+    database.query(selectCommand, [email], async (error, results) => {
+        if (error) {
+            console.log(error)
+            return response.status(500).json({ message: "Erro no servidor!" })
+        }
+
+        if (results.length === 0) {
+            return response.status(400).json({ message: "Usuário ou senha incorretos!" })
+        }
+
+        const user = results[0]
+
+        const senhaCorreta = await bcrypt.compare(password, user.password)
+
+        if (!senhaCorreta) {
+            return response.status(400).json({ message: "Usuário ou senha incorretos!" })
+        }
+
+        return response.json({
+            id: user.id_usuario,
+            name: user.name,
+            email: user.email
+        })
+    })
+})
 
 
 app.listen(port, () => {
