@@ -2,7 +2,7 @@ import express, { response } from "express"
 import cors from "cors"
 import mysql from "mysql2"
 import bcrypt from "bcrypt"
-import { getPodio, getRanking, addPlayer } from "./ranking/rankingController"
+// import { getPodio, getRanking, addPlayer } from "./ranking/rankingController"
 
 const port = 3333
 const app = express()
@@ -20,9 +20,9 @@ const database = mysql.createPool({
     connectionLimit: 10
 })
 
-app.get("/podio", getPodio)
-app.get("/ranking", getRanking)
-app.post("/ranking", addPlayer)
+// app.get("/podio", getPodio)
+// app.get("/ranking", getRanking)
+// app.post("/ranking", addPlayer)
 
 app.post("/cadastro", async (request, response) => {
     try {
@@ -65,36 +65,74 @@ app.post("/cadastro", async (request, response) => {
     }
 })
 
-// app.post("/coletaScore", (request, response) => {
-//     const { contadorAcertos } = request.body.score
+app.post("/coletaScore", (request, response) => {
+    const { id, userName, contadorAcertos } = request.body.user
+    console.log(contadorAcertos)
 
-//     const selectSql = `
-//         SELECT score quimicaNaWeb WHERE id = ?
-//     `
+    const selectSql = `
+        SELECT score FROM quimicaNaWeb WHERE id_usuario = ?
+    `
 
-//     const scoreAtual = database.query(selectSql, [id], (error) => {
-//         if (error) {
-//             console.log(error)
-//             response.json({ message: "Erro no banco de dados" })
-//             return
-//         }
-//     })
-//     const scoreUsuario = contadorAcertos + scoreAtual
 
-//     const comandtSql = `
-//         UPDATE quimicaNaWeb SET score = ? WHERE id = ?
-//     `
 
-//     database.query(comandtSql, [scoreUsuario], (error) => {
-//         if(error){
-//             console.log(error)
-//             response.json({message: "Erro ao tentar editar o score do usuario"})
-//             return
-//         }
+    database.query(selectSql, [id], (error, results) => {
+        if (error) {
+            console.log(error)
+            response.json({ message: "Erro no banco de dados" })
+            return
+        }
 
-//         response.json({message: "Sucesso"})
-//     })
-// })
+        if (results.length === 0) {
+            response.json({ message: "Usuário não encontrado" })
+            return
+        }
+
+        const scoreAtual = results[0].score
+        const scoreUsuario = scoreAtual + contadorAcertos
+
+        const updateSql = `
+            UPDATE quimicaNaWeb SET score = ? WHERE id_usuario = ?
+        `
+        
+
+        database.query(updateSql, [scoreUsuario, id], (error) => {
+            if (error) {
+                console.log(error)
+                response.json({ message: "Erro ao tentar editar o score do usuario" })
+                return
+            }
+
+            response.json({ message: "Sucesso" })
+        })
+    })
+})
+
+app.get("/podio", (request, response) => {
+    const sql = `
+        SELECT id_usuario, name, score
+        FROM quimicaNaWeb
+        ORDER BY score DESC
+        LIMIT 6
+    `
+
+    database.query(sql, (error, results) => {
+        if (error) {
+            console.log(error)
+            return response.status(500).json({ error: "Erro ao buscar o ranking" })
+        }
+        const top3 = results.slice(0, 3) 
+        const next3 = results.slice(3, 6)
+
+        console.log(top3)
+        console.log(next3)
+
+        return response.json({ top3, next3 })
+    })
+})
+
+
+
+
 
 app.listen(port, () => {
     console.log(`Servidor rodando na porta ${port}!`)

@@ -107,7 +107,12 @@ async function finalizarQuiz() {
   let mensagem = document.createElement("p");
   let botaoRetry = document.createElement("button");
 
-  const score = {
+  const userName = "raul"
+  const id = 105
+
+  const user = {
+    id,
+    userName,
     contadorAcertos
   }
 
@@ -116,8 +121,11 @@ async function finalizarQuiz() {
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({ score })
+    body: JSON.stringify({ user })
   }).then(response => response.json())
+  // export function getScore() {
+  //   return contadorAcertos;
+  // }
 
   if (contadorAcertos === perguntas.length) {
     titulo.textContent = "Medalha de Au!";
