@@ -23,7 +23,7 @@ async function CadastroUsuario() {
     }
 
     //envia o objeto users para o backend
-    const response = await fetch("http://localhost:3333/cadastro", {
+    const response = await fetch("https://quimicanawebback.onrender.com:3333/cadastro", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
