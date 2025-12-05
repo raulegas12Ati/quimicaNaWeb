@@ -1,3 +1,4 @@
+import linkAPI from "../paginasLogin/login"
 //Coleta o valor do botão e garante que ele não atualize a pagina
 const button = document.querySelector("button")
 button.onclick = (event) => {
@@ -23,7 +24,7 @@ async function CadastroUsuario() {
     }
 
     //envia o objeto users para o backend
-    const response = await fetch("https://quimicanawebback.onrender.com/cadastro", {
+    const response = await fetch(`${linkAPI}/cadastro`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

@@ -1,13 +1,8 @@
-const button = document.querySelector("button")
-button.onclick = (event) => {
-    event.preventDefault()
-    login()
-}
+export const linkAPI = "http://localhost:3333"
+
 async function login() {
     const email = document.querySelector("#email").value
     const password = document.querySelector("#password").value
-
-
 
     if (email === "" || password === "") {
         alert("Preencha TODAS as informações!")
@@ -22,7 +17,7 @@ async function login() {
     console.log(users)
 
     //enviar o user para o backend
-    const response = await fetch("https://quimicanawebback.onrender.com/login", {
+    const response = await fetch(`${linkAPI}/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -45,7 +40,6 @@ async function login() {
 
     window.location.href = "../index.html"
 }
-
 
 function init() {
   const menu = document.querySelector(".AjusteLogin")
