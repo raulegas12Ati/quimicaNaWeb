@@ -1,11 +1,11 @@
-import linkAPI from "../paginasLogin/login"
+import {linkAPI} from "../paginasLogin/login.js"
 //Coleta o valor do botão e garante que ele não atualize a pagina
 const button = document.querySelector("button")
 button.onclick = (event) => {
     event.preventDefault()
     CadastroUsuario()
+    console.log("Chegou")
 }
-
 //coleta e envia os dasos do cadastro para o backend
 async function CadastroUsuario() {
     const name = document.querySelector("#name").value
@@ -46,8 +46,6 @@ async function CadastroUsuario() {
     document.querySelector("#email").value = ""
     document.querySelector("#password").value = ""
 }
-
-
 
 function init() {
   const menu = document.querySelector(".AjusteLogin")

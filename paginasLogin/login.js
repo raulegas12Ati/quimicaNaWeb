@@ -1,5 +1,11 @@
 export const linkAPI = "http://localhost:3333"
 
+const button = document.querySelector("button")
+button.onclick = (event) => {
+  event.preventDefault()
+  login()
+}
+
 async function login() {
     const email = document.querySelector("#email").value
     const password = document.querySelector("#password").value
