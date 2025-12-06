@@ -1,64 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="module" src="ranking.js" defer></script>
-  <title>Ranking do Quiz</title>
-  <link rel="stylesheet" href="ranking.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ranking.css">
+  <script src="./ranking.js" defer></script>
+  <title>Ranking</title>
 </head>
+
 <body>
-  <header class="menu">
-    <nav>
-      <button class="ativo">TABELA</button>
-      <button class="ativo">TEMAS</button>
-      <button class="ativo">QUIZ</button>
-      <button class="ativo">CRIADORES</button>
-    </nav>
+  <header>
+    <nav class="AjusteLogin"></nav>
   </header>
 
   <main>
-    <section class="ranking">
-      <h1>Ranking</h1>
-      <ul class="lista">
-        <li><span class="posicao">4</span><span class="nome">@marcinho</span><span class="pontos">5708 pts</span></li>
-        <li><span class="posicao">5</span><span class="nome">@dre_dressa</span><span class="pontos">4704 pts</span></li>
-        <li><span class="posicao">6</span><span class="nome">@t0cy</span><span class="pontos">3298 pts</span></li>
-      </ul>
-    </section>
+    <h1>Ranking</h1>
 
-    
-    <section class="ranking-card">
+    <section class="podio">
       <div class="segundo">
-        <div class="avatar">🕶️</div>
-        <div class="card">CoNho</div>
-        <div class="pontos">7873</div>
-        <div class="base">2</div>
-        <div class="flutuante"> 
-          <img src="/cute.jpg" alt="flutuante">
-        </div>
+        <h2 class="posicao">2° lugar</h2>
+        <img src="./Profile.png" alt="Imagem do usuario">
+        <h2>Nicole</h2>
+        <h2>90</h2>
       </div>
+
       <div class="primeiro">
-        <div class="avatar">👑🕶️</div>
-        <div class="card">Carambolas</div>
-        <div class="pontos">9879</div>
-        <div class="base">1</div>
-        <div class="flutuante"> 
-          <img src="/win.jpg" alt="flutuante">
-        </div>
+        <h2 class="posicao">1° lugar</h2>
+        <img src="./Profile.png" alt="Imagem do usuario">
+        <h2>Raul</h2>
+        <h2>100</h2>
       </div>
+
       <div class="terceiro">
-        <div class="avatar">🕶️</div>
-        <div class="card">Bláblabla</div>
-        <div class="pontos">9879</div>
-        <div class="base">3</div>
-        <div class="flutuante"> 
-          <img src="/star.jpg" alt="flutante">
-        </div>
+        <h2 class="posicao">3° lugar</h2>
+        <img src="./Profile.png" alt="Imagem do usuario">
+        <h2>João</h2>
+        <h2>59</h2>
       </div>
     </section>
 
-    <div class="mensagem" id="mensagem">Pontuação salva!</div>
+    <section class="restoRanking">
+      <div class="quarto">
+        <p>4°</p>
+        <h3>Leonardo</h3>
+        <div class="score">
+          <h3>20</h3>
+        </div>
+      </div>
+      <div class="quinto">
+        <p>5°</p>
+        <h3>Vinicius</h3>
+        <div class="score">
+          <h3>11</h3>
+        </div>
+      </div>
+      <div class="sexto">
+        <p>6°</p>
+        <h3>Gabriel</h3>
+        <div class="score">
+          <h3>5</h3>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
+
 </html>
