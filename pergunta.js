@@ -1,3 +1,4 @@
+import { linkAPI } from "./paginasLogin/login.js"
 const user = JSON.parse(sessionStorage.getItem("user"));
 
 if (!user) {
@@ -122,7 +123,7 @@ async function finalizarQuiz() {
     contadorAcertos
   }
 
-  const response = await fetch("https://quimicanawebback.onrender.com/coletaScore", {
+  const response = await fetch(`${linkAPI}/coletaScore`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -174,4 +175,6 @@ botaoProximo.onclick = () => {
     botaoProximo.style.display = "none";
     finalizarQuiz();
   }
+
+  alert(response.message)
 };

@@ -171,4 +171,5 @@ botaoProximo.onclick = () => {
     botaoProximo.style.display = "none";
     finalizarQuiz();
   }
+  alert(response.message)
 };
