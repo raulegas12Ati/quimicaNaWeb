@@ -1,6 +1,15 @@
 import { linkAPI } from "../paginasLogin/login.js"
+import "./home.js"
+console.log("Chegou")
+
+const button = document.querySelector("button")
+button.onclick = (event) => {
+  event.preventDefault()
+  coletarRanking()
+}
 
 async function coletarRanking() {
+  console.log("Chegou")
   const user = JSON.parse(sessionStorage.getItem("user"))
   if (!user) {
     alert("Você precisa fazer o login antes de ver o ranking!")
@@ -20,5 +29,3 @@ async function coletarRanking() {
   console.log(top3)
   console.log(next3)
 }
-
-coletarRanking()
